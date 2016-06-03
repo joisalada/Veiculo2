@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".VeiculoEntryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/idLabel"
+        android:id="@+id/idLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/idField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/idField"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/placa"
+        android:id="@+id/placaLabel"
+        android:layout_above="@+id/marcaLabel"
+        android:layout_alignTop="@+id/placa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/placa" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placa"
+        android:layout_below="@+id/idField"
+        android:layout_alignRight="@+id/idField"
+        android:layout_alignEnd="@+id/idField"
+        android:inputType="text"
+        android:layout_toEndOf="@+id/marcaLabel"
+        android:layout_toRightOf="@+id/marcaLabel"
+        android:editable="true"
+        android:enabled="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/marca"
+        android:id="@+id/marcaLabel"
+        android:layout_below="@+id/placa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/idField"
+        android:layout_toLeftOf="@+id/idField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/marca"
+        android:layout_alignTop="@+id/marcaLabel"
+        android:layout_toRightOf="@+id/marcaLabel"
+        android:layout_toEndOf="@+id/marcaLabel"
+        android:enabled="true"
+        android:editable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nome_propriet_rio"
+        android:id="@+id/proprietarioLabel"
+        android:layout_below="@+id/marca"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/proprietario" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/proprietario"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_alignBottom="@+id/proprietarioLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/save"
+        android:layout_above="@+id/delete"
+        android:layout_alignLeft="@+id/delete"
+        android:layout_alignStart="@+id/delete" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:text="@string/deletar"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/cpf"
+        android:id="@+id/cpfLabel"
+        android:layout_alignBottom="@+id/cpf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/cpf"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_below="@+id/proprietarioLabel"
+        android:layout_toRightOf="@+id/proprietarioLabel"
+        android:layout_toEndOf="@+id/proprietarioLabel" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/endereco"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_above="@+id/vistoria"
+        android:layout_alignLeft="@+id/cpf"
+        android:layout_alignStart="@+id/cpf" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/vistoria"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_above="@+id/save"
+        android:layout_alignLeft="@+id/endereco"
+        android:layout_alignStart="@+id/endereco"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/endere_o_vistoria"
+        android:id="@+id/enderecoLabel"
+        android:layout_above="@+id/vistoria"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/endereco"
+        android:layout_toStartOf="@+id/endereco" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/vistoria"
+        android:id="@+id/vistoriaLabel"
+        android:layout_alignBottom="@+id/vistoria"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

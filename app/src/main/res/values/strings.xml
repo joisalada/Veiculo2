@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cadastro Veículos</string>
+    <string name="idLabel">Id</string>
+    <string name="code">Código</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="save">Salvar</string>
+    <string name="deletar">Deletar</string>
+    <string name="Deletar">Deletar</string>
+    <string name="deletar1">Deletar</string>
+    <string name="placa">Placa</string>
+    <string name="marca">Marca</string>
+    <string name="cpf">CPF</string>
+    <string name="endere_o_vistoria">Endereço Vistoria</string>
+    <string name="vistoria">Vistoria</string>
+    <string name="nome_propriet_rio">Nome Proprietário</string>
+</resources>
